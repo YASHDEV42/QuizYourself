@@ -1,0 +1,29 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@kinde-oss/kinde-auth-nextjs": "^2.2.5",
+    "@kinde/management-api-js": "^0.6.0",
+    "@tanstack/react-query": "^5.40.0",
+    "dompurify": "^3.1.2",
+    "mongodb": "^6.5.0",
+    "next": "14.2.3",
+    "next-auth": "^4.24.7",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.1.0",
+    "react-toastify": "^10.0.5",
+    "zod": "^3.23.5"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
+  }
+}

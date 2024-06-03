@@ -1,8 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import KindeLogIn from "./kinde-login";
-
+import { FaTimes, FaBars } from "react-icons/fa";
 const Navbar = () => {
+  // const navRef = useRef();
+  // const showNav = () => {
+  //   navRef.current.classList.toggle("show-nav");
+  // };
   return (
     <navigator>
       <div id="navbar">

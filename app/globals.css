@@ -586,3 +586,26 @@ label > input:checked {
 }
 
 /*---- END TAKE QUIZ ----*/
+/*---- START RESPONSIVE ----*/
+@media screen and (max-width: 1424px) {
+  #gear {
+    display: none;
+  }
+  #quizIcon {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #logo > h2 {
+    font-size: 1.5em;
+  }
+  #nav-link {
+    padding-left: 1rem;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 480px) {
+}
+/*---- END RESPONSIVE ----*/

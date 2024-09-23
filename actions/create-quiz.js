@@ -16,10 +16,9 @@ export const createQuiz = async (prevState, formData) => {
     .replace(/ /g, "-")
     .replace(/[^a-zA-Z0-9-]/g, "");
 
-  // Convert choices string into an array for each question
   const formattedQuestions = questions.map((question) => ({
     ...question,
-    choices: question.choices.split(",").map((choice) => choice.trim()), // Split the string by commas and trim each choice
+    choices: question.choices.split(",").map((choice) => choice.trim()),
   }));
   const client = await connectDatabase();
   const quizzes = await getAllDocuments(client, "quizzes", {
@@ -46,7 +45,7 @@ export const createQuiz = async (prevState, formData) => {
   if (!title) {
     error.push("Title is required");
   }
-  if (questions.length < 6) {
+  if (questions.length =< 6) {
     error.push("At least six questions are required");
   }
   for (let i = 0; i < questions.length; i++) {

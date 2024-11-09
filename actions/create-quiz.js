@@ -45,8 +45,8 @@ export const createQuiz = async (prevState, formData) => {
   if (!title) {
     error.push("Title is required");
   }
-  if (questions.length =< 6) {
-    error.push("At least six questions are required");
+  if (questions.length < 6) {
+    error.push("At least 7 questions are required");
   }
   for (let i = 0; i < questions.length; i++) {
     if (!questions[i].question.trim()) {
